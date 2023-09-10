@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main{
+  background: #FF4E50; 
+background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  
+background: linear-gradient(to right, #F9D423, #FF4E50); 
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+  font-size: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  
+  }
+  .navbar img{
+    width: 50px;
+    height: 50px;
+
+  }
+
+.containerh{
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: 30px auto;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+ h3,h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: italic;
+ }
+
+ form{
+  display: flex;
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ }
+
+ input{
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+ }
+
+ .receipe{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 20px;
+ }
+
+ .card{
+  width: 200px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 5px;
+  padding-bottom: 10px;
+ }
+
+ .card-image{
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+ }
+
+ .card-body{
+  padding: 10px;
+  text-align: center;
+
+ }
+
+ .category{
+  color: grey;
+ }
+
+a{
+  margin: 10px;
+  text-decoration: none;
+  padding: 5px;
+  background: #FF512F;  
+background: -webkit-linear-gradient(to right, #F09819, #FF512F); 
+background: linear-gradient(to right, #F09819, #FF512F); 
+border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
